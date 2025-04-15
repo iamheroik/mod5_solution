@@ -1,20 +1,28 @@
-<div class="text-center">
-  <div class="row">
-
-    <a id="menu-tile" class="col-md-4 col-sm-6 col-xs-12 category-tile" href="#" onclick="$dc.loadMenuCategories();">
-      <div class="category-tile-title">menu</div>
-      <img width="200" height="150" src="images/menu-tile.jpg" alt="Menu">
+<div id="home-tiles" class="row text-center">
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <a href="#" onclick="$dc.loadMenuCategories();">
+      <div class="category-tile">
+        <img src="images/menu-tile.jpg" alt="Menu" class="img-responsive">
+        <span>Menu</span>
+      </div>
     </a>
+  </div>
 
-    <a id="specials-tile" class="col-md-4 col-sm-6 col-xs-12 category-tile" href="#" onclick="$dc.loadMenuItems({{randomCategoryShortName}});">
-      <div class="category-tile-title">specials</div>
-      <img width="200" height="150" src="images/specials-tile.jpg" alt="Specials">
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <a href="#" onclick="$dc.loadMenuItems({{randomCategoryShortName}});">
+      <div class="category-tile">
+        <img src="images/specials-tile.jpg" alt="Specials" class="img-responsive">
+        <span>Specials</span>
+      </div>
     </a>
+  </div>
 
-    <a id="map-tile" class="col-md-4 col-sm-12 col-xs-12 category-tile" href="https://www.google.com/maps/place/David+Chu's+China+Bistro/@39.3219641,-76.6971614,17z/data=!3m1!4b1!4m5!3m4!1s0x89c805259ae63ce5:0xc5ff2e5f3fddfc94!8m2!3d39.3219641!4d-76.6949727" target="_blank">
-      <div class="category-tile-title">map</div>
-      <img width="200" height="150" src="images/map-tile.png" alt="Map">
+  <div class="col-md-4 col-sm-12 col-xs-12">
+    <a href="https://www.google.com/maps/place/David+Chu's+China+Bistro/@39.3219641,-76.6971614" target="_blank">
+      <div class="category-tile">
+        <img src="images/map-tile.png" alt="Map" class="img-responsive">
+        <span>Map</span>
+      </div>
     </a>
-
   </div>
 </div>
