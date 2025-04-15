@@ -114,88 +114,37 @@ body {
 }
 /* END FOOTER */
 
-
 /* HOME PAGE */
-
-/* Hero Image */
-#home-tiles + .text-center img,
-.text-center img.hero {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-}
-
-/* Updated Tile Layout */
 #home-tiles {
   margin-top: 30px;
 }
 #home-tiles .category-tile {
-  margin: 20px 0;
-  padding: 10px;
-  background-color: #871f4b;
-  border: 1px solid #700f38;
-  border-radius: 6px;
-  transition: transform 0.2s ease;
+  position: relative;
+  margin: 15px 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
 }
-#home-tiles .category-tile:hover {
-  transform: scale(1.02);
-  background-color: #9c275f;
-}
-#home-tiles .category-tile img {
-  margin-bottom: 10px;
+#home-tiles .category-tile img,
+#home-tiles .category-tile iframe {
+  width: 100%;
+  height: auto;
+  display: block;
   border-radius: 6px;
 }
 #home-tiles .category-tile span {
-  display: block;
-  font-size: 1.4em;
-  font-weight: bold;
-  color: #fff;
-  margin-top: 5px;
-  text-transform: uppercase;
-}
-
-/* Background Tiles (legacy compatibility) */
-#menu-tile, #specials-tile, #map-tile {
-  height: 250px;
-  width: 100%;
-  margin-bottom: 15px;
-  position: relative;
-  border: 2px solid #3F0C1F;
-  overflow: hidden;
-}
-#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
-  box-shadow: 0 1px 5px 1px #cccccc;
-}
-#menu-tile {
-  background: url('../images/menu-tile.jpg') no-repeat;
-  background-position: center;
-}
-#specials-tile {
-  background: url('../images/specials-tile.jpg') no-repeat;
-  background-position: center;
-}
-#menu-tile span, #specials-tile span, #map-tile span {
   position: absolute;
   bottom: 0;
-  right: 0;
   width: 100%;
-  text-align: center;
-  font-size: 1.6em;
-  text-transform: uppercase;
+  padding: 10px 0;
   background-color: #000;
   color: #fff;
-  opacity: .8;
-}
-
-/* Responsive Images */
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.9;
+  text-align: center;
 }
 
 /* MENU CATEGORIES PAGE */
