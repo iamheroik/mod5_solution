@@ -67,7 +67,7 @@ $(function () {
 
         // FIX: include semicolon for valid JS call in final HTML
         var homeHtmlToInsertIntoMainPage =
-          insertProperty(homeHtml, "randomCategoryShortName", "'" + chosenCategoryShortName + "';");
+          insertProperty(homeHtml, "randomCategoryShortName", "'" + chosenCategoryShortName + "'");
 
         insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
       },
